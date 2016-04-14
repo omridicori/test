@@ -33,3 +33,7 @@ input {
     outline-color: rgba(62, 213, 16, 0.4);
     background-color: transparent;
 }
+
+p {
+    font-size: 13px;
+}
