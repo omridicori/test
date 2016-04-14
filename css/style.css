@@ -1,0 +1,26 @@
+body {
+    font-family: Alef;
+    color: #373737;
+
+}
+lable {
+    margin-right: 2.5em;
+}
+
+textarea {
+    resize: none;
+    font-family: Alef;
+    width: 300px;
+}
+
+input {
+    width: 300px;
+}
+
+icon {
+    color: #3ed510;
+}
+
+div {
+
+}

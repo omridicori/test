@@ -3,89 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <title>my page</title>
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   </head>
-  <body align="center" dir="ltr">
-    <h1>Omri Dicori</h1>
-		<p><b><u>Favorite sites:</u></b></p>
-		<ul>
-			<li><a href="#omri">Go to Omri picture</a></li>
-    	<li><a href="indexheb.html">אתר בעברית</a></li>
-    	<li><a href="index.html">english site</a></li>
-			<li><a href="http://www.sport5.co.il">Go to sport5</a></li>
-		</ul>
-		<p><b><u>My Picture:</u></b></p>
-		<img src="images/first.jpg" alt="picture of omri" title="Omri" width="10%" height="auto" id="omri">
-		<br>
-		<p>
-		arcu tincidunt  euismod fringilla, justo
-		<br>
-		arcu tincidunt blandit. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt blandit. Nam smod fringilla, justo 
-		<br>
-		arcu tincidunt. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt  euismod fringilla, justo
-		<br>
-		arcu tincidunt blandit. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt blandit. Nam smod fringilla, justo 
-		<br>
-		arcu tincidunt. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt  euismod fringilla, justo
-		<br>
-		arcu tincidunt blandit. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt blandit. Nam smod fringilla, justo 
-		<br>
-		arcu tincidunt. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt  euismod fringilla, justo
-		<br>
-		arcu tincidunt blandit. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt blandit. Nam smod fringilla, justo 
-		<br>
-		arcu tincidunt. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt  euismod fringilla, justo
-		<br>
-		arcu tincidunt blandit. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt blandit. Nam smod fringilla, justo 
-		<br>
-		arcu tincidunt. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt  euismod fringilla, justo
-		<br>
-		arcu tincidunt blandit. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		arcu tincidunt blandit. Nam smod fringilla, justo 
-		<br>
-		arcu tincidunt. Nam tincidunt, nulla eget euismod fringilla, justo 
-		<br>
-		</p>
-		<hr>
-		<table align="center" border="0" bordercolor="black" bgcolor="green">
-			<tr>
-				<td> 1 </td>
-				<td> 2 </td>
-				<td> 3 </td>
-				<td> 4 </td>
-			</tr>
-			<tr>
-				<td> a </td>
-				<td> b </td>
-				<td> c </td>
-				<td> d </td>
-			</tr>
-			<tr>
-				<td> א</td>
-				<td> ב </td>
-				<td> ג </td>
-				<td> ד </td>
-			</tr>
-		</table>
+  <body>
+  <div class="contact">
+    <h1 class="mainheader">Contact Us:</h1>
+	<form action="/signup" method="get">
+		<div>
+			<icon class="fa fa-user"></icon>
+			<lable for="text">Name:</lable>
+			<input type="text" id="name" placeholder="Your Name" name="fullname">
+		</div>
+		<div>
+			<icon class="fa fa-envelope"></icon>
+			<lable for="email">Email:</lable>
+			<input type="email" id="email" placeholder="Your Email Address">
+		</div>
+		<div>
+			<icon class="fa fa-commenting-o"></icon>
+			<lable for="mymessage">Message:</lable>
+			<textarea class="textarea" id="mymessage" rows="15" placeholder="Your Message Here"></textarea>
+		</div>
+		<button type="submit">Send</button>
+	</form>
+  </div>
  </body>
 </html>
