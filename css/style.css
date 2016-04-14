@@ -18,4 +18,9 @@ input {
 }
 
 icon {
-    color: #3ed510;  }
+    color: #3ed510;
+}
+
+fieldset {
+    width: 500px;
+}
