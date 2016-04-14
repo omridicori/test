@@ -1,7 +1,7 @@
 body {
     font-family: Alef;
     color: #373737;
-    align-content: center;
+    font-weight: bold;
 }
 lable {
     margin-right: 2.5em;
@@ -18,5 +18,4 @@ input {
 }
 
 icon {
-    color: #3ed510;
-}
+    color: #3ed510;  }
