@@ -8,6 +8,7 @@ textarea {
     resize: none;
     font-family: Alef;
     width: 300px;
+    outline-color: #3ed510;
 }
 
 
@@ -22,4 +23,12 @@ fieldset {
 
 button {
     background-color: #3ed510;
+}
+
+input {
+    border: 1;
+    border-color: transparent;
+    border-bottom-color: #3ed510;
+    outline-color: rgba(62, 213, 16, 0.4);
+    background-color: transparent;
 }
