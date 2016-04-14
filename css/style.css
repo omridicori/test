@@ -3,9 +3,6 @@ body {
     color: #373737;
     font-weight: bold;
 }
-lable {
-    margin-right: 2.5em;
-}
 
 textarea {
     resize: none;
@@ -13,9 +10,6 @@ textarea {
     width: 300px;
 }
 
-input {
-    width: 300px;
-}
 
 icon {
     color: #3ed510;
