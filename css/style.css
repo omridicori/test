@@ -37,3 +37,7 @@ input {
 p {
     font-size: 13px;
 }
+
+div {
+    margin-bottom: 5px;
+}
