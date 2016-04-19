@@ -1,44 +1,44 @@
 body {
-    font-family: Alef;
-    color: #373737;
-    font-weight: bold;
+    font-family: Alef !important;
+    color: #373737 !important;
+    font-weight: bold !important;
 }
 
 textarea {
-    resize: none;
-    font-family: Alef;
-    width: 300px;
-    outline-color: #3ed510;
-    background-color: rgba(244, 244, 244, 0.67);
+    resize: none !important;
+    font-family: Alef !important;
+    width: 300px !important;
+    outline-color: #3ed510 !important;
+    background-color: rgba(244, 244, 244, 0.67) !important;
 }
 
 
 icon {
-    color: #3ed510;
+    color: #3ed510 !important;
 }
 
 fieldset {
-    width: 30%;
-    background-color: #f4f4f4;
+    width: 30% !important;
+    background-color: #f4f4f4 !important;
 }
 
 button {
-    background-color: #3ed510;
+    background-color: #3ed510 !important;
 }
 
 input {
-    border: 1;
-    border-color: transparent;
-    border-bottom-color: #3ed510;
-    outline-color: rgba(62, 213, 16, 0.4);
-    background-color: transparent;
+    border: 1 !important;
+    border-color: transparent !important;
+    border-bottom-color: #3ed510 !important;
+    outline-color: rgba(62, 213, 16, 0.4) !important;
+    background-color: transparent !important;
 }
 
 p {
-    font-size: 13px;
+    font-size: 13px !important;
 }
 
 div {
-    margin-bottom: 7px;
+    margin-bottom: 7px !important;
 }
 
