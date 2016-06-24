@@ -1,0 +1,74 @@
+.clock {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('456.jpg');
+    background-attachment: cover;
+}
+
+.pool {
+    height: 200px;
+    width: 1000px;
+    background-image: url("road.png");
+}
+
+.swim1 {
+    width:            50px;
+    position:         absolute;
+    height:           50px;
+    background-image: url("1.png");
+    transform: translateX(10px);
+    transition:         transform 800ms;
+}
+
+.swim2 {
+    width:            50px;
+    position:         absolute;
+    height:           50px;
+    background-image: url("2.png");
+    top:              85px;
+    transform: translateX(10px);
+    transition:         transform 800ms;
+}
+
+.swim3 {
+    width:            50px;
+    position:         absolute;
+    height:           50px;
+    background-image: url("3.png");
+    top:              160px;
+    transform: translateX(10px);
+    transition:         transform 800ms;
+}
+
+.final {
+    width:            50px;
+    position:         absolute;
+    height:           200px;
+    background-image: url("finishline.png");
+    transform:        translateX(800px);
+    transition:       transform 800ms;
+}
+
+.finalscore1 {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+
+}
+.finalscore2 {
+    position: absolute;
+    top: 85px;
+    left: 250px;
+}
+.finalscore3 {
+    position: absolute;
+    top: 160px;
+    left: 250px;
+}
+
+button {
+    position:         absolute;
+    top: 300px;
+}
