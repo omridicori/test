@@ -8,9 +8,6 @@ var finaltime3;
 var swimfirst;
 var swimsecond;
 var swimthird;
-var fin1 = 0;
-var fin2 = 0;
-var fin3 = 0;
 
 function startrace() {
     swimfirst = document.getElementById('swim1');
@@ -18,9 +15,8 @@ function startrace() {
     window.helper.animate(swimfirst, function (swimfirst, frameNumber) {
         math1 = math1 + Math.random()*50;
         var timesecs1 =  frameNumber + math1 ;
-        if (timesecs1 >= 850) {return;} else { finaltime1.innerText = [frameNumber/10]
-            fin1 = [frameNumber/10];
-        }
+        if (timesecs1 >= 850) {return;} else if (frameNumber/10  % 1 != 0) { finaltime1.innerHTML = "<p class='fin1'>" + "0" + [frameNumber/10] + "0</p>";
+        } else finaltime1.innerHTML = "<p class='fin1'>" + "0" + [frameNumber/10] + ".00</p>";
         helper.changeCss(swimfirst, 'transform: translateX(' + timesecs1 + 'px)');
     }, 100);
 
@@ -29,9 +25,8 @@ finaltime2 = document.getElementById('finalscore2');
 window.helper.animate(swimsecond, function (swimsecond, frameNumber) {
     math2 = math2 + Math.random()*50;
     var timesecs2 =  frameNumber + math2 ;
-    if (timesecs2 >= 850) {return;} else { finaltime2.innerText = [frameNumber/10]
-        fin2 = [frameNumber/10];
-    }
+    if (timesecs2 >= 850) {return;} else if (frameNumber/10  % 1 != 0) { finaltime2.innerHTML = "<p class='fin2'>" + "0" + [frameNumber/10] + "0</p>";
+    } else finaltime2.innerHTML = "<p class='fin2'>" + "0" + [frameNumber/10] + ".00</p>"
     helper.changeCss(swimsecond, 'transform: translateX(' + timesecs2 + 'px)');
 }, 100);
 
@@ -40,21 +35,37 @@ swimthird = document.getElementById('swim3');
     window.helper.animate(swimthird, function (swimthird, frameNumber) {
         math3 = math3 + Math.random()*50;
         var timesecs3 =  frameNumber + math3 ;
-        if (timesecs3 >= 850) {return;} else { finaltime3.innerText = [frameNumber/10];
-        fin3 = [frameNumber/10];
-        }
+        if (timesecs3 >= 850) {return;} else if (frameNumber/10  % 1 != 0) { finaltime3.innerHTML = "<p class='fin3'>" + "0" + [frameNumber/10] + "0</p>";
+        } else finaltime3.innerHTML = "<p class='fin3'>" + "0" + [frameNumber/10] + ".00</p>"
         helper.changeCss(swimthird, 'transform: translateX(' + timesecs3 + 'px)');
-    }, 100); }
-function printwinner() {
-        if (fin1 < fin2) {
-            console.log(fin1);
-        }
-    }
+    }, 100);
+    var green = document.getElementById('greenlight');
+    helper.changeCss(green, 'opacity: 1.0');
+    var yellow = document.getElementById('yellowlight');
+    helper.changeCss(yellow, 'opacity: 0.2');
+    var red = document.getElementById('redlight');
+    helper.changeCss(red, 'opacity: 0.2');
+}
 
-
+function starter() {
+    var green = document.getElementById('greenlight');
+    helper.changeCss(green, 'opacity: 1.0');
+    var yellow = document.getElementById('yellowlight');
+    helper.changeCss(yellow, 'opacity: 0.2');
+    var red = document.getElementById('redlight');
+    helper.changeCss(red, 'opacity: 0.2');
+    go.dispatchEvent(startrace());
+}
 
 var go = document.getElementById('gobutton');
-go.addEventListener("click",startrace, printwinner);
+go.addEventListener("click",startrace);
+
+var trafficlight = document.getElementById('light');
+trafficlight.addEventListener("click",starter);
+
+
+
+
 
 
 
